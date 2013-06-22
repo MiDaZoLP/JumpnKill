@@ -4,6 +4,6 @@ import org.bukkit.entity.Player;
 
 public interface SubCommand {
 	
-	public abstract boolean onCommand(Player player, String args[]);
+	public abstract boolean onCommand(Player p, String args[]);
 
 }

@@ -27,6 +27,8 @@ public class Messages {
 		fc.addDefault("messages.arenaset", "&4Du hast erfolgreich eine Arena gesetzt!");
 		fc.addDefault("messages.arenalobbyset", "&4Du hast erfolgreich den Spawn für %arena% gesetzt!");
 		fc.addDefault("messages.commandnotexist", "&4Dieses Kommando existiert nicht!");
+		fc.addDefault("messages.canceled", "&4Du hast den Vorgang erfolgreich abgebrochen!");
+		fc.addDefault("messages.needrightclick", "&4Du musst jetzt ein Schild mit der richtigen Aufschrift rechtsklicken um ein Lobbyschild zu erstellen oder gib '/jnk cancel' ein!");
 		fc.addDefault("messages.arenaspawnteamset", "&4Du hast erfolgreich den Spawn für das Team %team% gesetzt!");
 	}
 	public Object get(String path) {

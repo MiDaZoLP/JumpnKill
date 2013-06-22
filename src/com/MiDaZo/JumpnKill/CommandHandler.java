@@ -18,7 +18,7 @@ public class CommandHandler implements CommandExecutor {
 
 	private Messages msg;
 	
-	public CommandHandler(Plugin plugin, Messages msg) {
+	public CommandHandler(JumpnKill plugin, Messages msg) {
 		this.msg = msg;
 		this.plugin = plugin;
 		commands = new HashMap<Object, Object>();
@@ -26,7 +26,7 @@ public class CommandHandler implements CommandExecutor {
 	}
 	
 	private void loadCommands() {
-		commands.put("setsign", new SetSign());
+		commands.put("setsign", new SetSign(plugin, msg));
 	}
 //----------------------------------------------------------------
 	@Override
@@ -67,6 +67,6 @@ public class CommandHandler implements CommandExecutor {
 		return false;
 	}
 	//----------------------------------------------------------------
-	private Plugin plugin;
+	private JumpnKill plugin;
 	private HashMap<Object, Object> commands;
 }

@@ -6,7 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class JumpnKill extends JavaPlugin {
 	
-	public static ArrayList<Object> SignPlayers = new ArrayList<Object>();
+	public ArrayList<Object> SignPlayers = new ArrayList<Object>();
 	
 	public void onEnable() {
 		loadCommands();
