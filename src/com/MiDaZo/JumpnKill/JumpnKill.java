@@ -1,12 +1,14 @@
 package com.MiDaZo.JumpnKill;
 
+import java.util.ArrayList;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class JumpnKill extends JavaPlugin {
 	
+	public static ArrayList<Object> SignPlayers = new ArrayList<Object>();
+	
 	public void onEnable() {
-		loadConfig();
-		registerEvents();
 		loadCommands();
 	}
 	public void onDisable() {
@@ -23,5 +25,4 @@ public class JumpnKill extends JavaPlugin {
 	public void registerEvents() {
 		
 	}
-
 }
